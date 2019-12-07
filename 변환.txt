@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Height {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.print("키를 입력하시오(cm): ");
+		int cm = input.nextInt();
+
+		double inch = (double)cm/2.54;
+		double feet = inch/12;
+
+		System.out.printf("%dcm는 %.2f feet이고,\n",cm,feet);
+		System.out.printf("%dcm는 %.2f inch입니다.",cm,inch);
+	}
+}
